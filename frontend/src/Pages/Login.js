@@ -23,7 +23,7 @@ export default function Signup() {
     const { email, password } = loginInfo;
 
     try {
-      const url = "http://localhost:8080/auth/login";
+      const url = "https://authentication-project-sigma.vercel.app/auth/login";
       const res = await fetch(url, {
         method: "POST",
         headers: {
