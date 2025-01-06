@@ -22,7 +22,7 @@ export default function Home() {
           Authorization: localStorage.getItem("token"),
         },
       };
-      const response = await fetch("http://localhost:8080/product", headers);
+      const response = await fetch("https://authentication-project-sigma.vercel.app/product", headers);
       const result = await response.json();
       setGetProduct(result);
       console.log("result", result);
