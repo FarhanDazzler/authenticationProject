@@ -26,7 +26,7 @@ export default function Signup() {
       return handleError("All fields are required");
     }
     try {
-      const url = "http://localhost:8080/auth/signup";
+      const url = "https://authentication-project-sigma.vercel.app/auth/signup";
       const res = await fetch(url, {
         method: "POST",
         headers: {
